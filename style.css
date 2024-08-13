@@ -1,0 +1,583 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid whitesmoke 0.5px;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10000;
+
+}
+
+.navbar img {
+    width: 35px;
+
+}
+
+.navbar__s1 {
+    display: flex;
+    gap: 3px;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar__s2 {
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+
+.navbar__s2 button {
+    border: none;
+    padding: 20px;
+    height: 50px;
+    background-color: white;
+    align-items: center;
+    font-weight: bolder;
+
+
+}
+
+.navbar__s2__1:hover {
+    cursor: pointer;
+    background-color: gainsboro;
+    border-radius: 25px;
+}
+
+.navbar__s2__3:hover {
+    cursor: pointer;
+    background-color: gainsboro;
+    border-radius: 25px;
+}
+
+.navbar__s2__2:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.navbar__s2__4:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.navbar__s3 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.navbar__s3__2 {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+    border: 0;
+
+}
+
+.navbar__s3__2:hover {
+    cursor: pointer;
+    background-color: rgb(47, 45, 45);
+}
+
+.navbar__s3__1 {
+    border: 0;
+    padding: 15px;
+    border-radius: 30px;
+    font-weight: bolder;
+    background-color: white;
+}
+
+.navbar__s3__1:hover {
+    cursor: pointer;
+    background-color: gainsboro;
+    border-radius: 25px;
+
+}
+
+.search__1 {
+    text-align: center;
+    padding: 30px;
+}
+
+.search__2 {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    border-bottom: 10px;
+
+}
+
+.search__2__1:hover {
+    cursor: pointer;
+
+    border-bottom: solid black 1px;
+
+}
+
+.search__2__2:hover {
+    cursor: pointer;
+    border-bottom: solid black 1px;
+
+}
+
+.search__2__3:hover {
+    cursor: pointer;
+    border-bottom: solid black 1px;
+
+}
+
+.search__2__4:hover {
+    cursor: pointer;
+    border-bottom: solid black 1px;
+
+}
+
+.search__2__5:hover {
+    cursor: pointer;
+    border-bottom: solid black 1px;
+
+}
+
+.search__2__6:hover {
+    cursor: pointer;
+    border-bottom: solid black 1px;
+}
+
+.search__3 {
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 30px;
+    margin-top: 30px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    left: 18%;
+    font-size: 60px;
+
+}
+
+.search__3 img {
+    width: 30px;
+    padding-left: 10px;
+}
+
+
+.search__3 input {
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    font-size: medium;
+}
+
+.search__3 input:focus {
+    outline: none;
+}
+
+.search__3 button {
+    background-color: rgb(96, 233, 96);
+    padding: 10px;
+    border: solid rgb(96, 233, 96) 1px;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+
+.search__3 button:hover {
+    background-color: rgb(145, 235, 145);
+}
+
+.recommended__title {
+    text-align: start;
+    padding-left: 13%;
+    padding-top: 30px;
+    font-weight: 2px;
+}
+
+.recommended__title h3 {
+    padding-bottom: 10px;
+}
+
+.recommended__card img {
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+
+}
+
+.recommended__card h2 {
+    position: relative;
+    bottom: 39px;
+    left: 10px;
+    color: white;
+
+}
+
+.recommended__card {
+    gap: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.recommended__card img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.places__title {
+    text-align: start;
+    padding-left: 13%;
+    padding-top: 30px;
+    font-weight: 2px;
+
+}
+
+.places__title h3 {
+    padding-bottom: 10px;
+}
+
+.places__card {
+
+    gap: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.places__card img {
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.places__card img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.places__card p {
+    width: 270px;
+    padding-top: 10px;
+}
+
+.places__card h6 {
+    padding: 5px;
+    border: solid gray 1px;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+
+.like__title {
+    text-align: start;
+    padding-left: 13%;
+    padding-top: 30px;
+    font-weight: 2px;
+
+}
+
+.like__title h3 {
+    padding-bottom: 10px;
+}
+
+.like__card {
+
+    gap: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.like__card img {
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.like__card img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.like__card p {
+    width: 270px;
+    padding-top: 10px;
+}
+
+.like__card h6 {
+    padding: 5px;
+    border: solid gray 1px;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.adventure__title {
+    text-align: start;
+    padding-left: 13%;
+    padding-top: 30px;
+    font-weight: 2px;
+
+}
+
+.adventure__title h3 {
+    padding-bottom: 10px;
+}
+
+.adventure__card {
+
+    gap: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.adventure__card img {
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.adventure__card img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.adventure__card p {
+    width: 270px;
+    padding-top: 10px;
+}
+
+.adventure__card h6 {
+    padding: 5px;
+    border: solid gray 1px;
+    width: fit-content;
+    border-radius: 20px;
+}
+.explore{
+    background-color: bisque;
+}
+.explore__title {
+    text-align: start;
+    padding-left: 13%;
+    padding-top: 30px;
+    font-weight: 2px;
+
+}
+
+.explore__title h3 {
+    padding-bottom: 10px;
+}
+
+.explore__card {
+
+    gap: 20px;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.explore__card img {
+    width: 75%;
+    height: 70%;
+    border-radius: 10px;
+
+
+}
+
+.explore__card img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.explore__card p {
+    width: 270px;
+    padding-top: 10px;
+    font-weight: bolder;
+}
+
+.explore__card p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.destination__title {
+    text-align: start;
+    padding-left: 13%;
+    padding-top: 30px;
+    font-weight: 2px;
+}
+
+.destination__title h3 {
+    padding-bottom: 10px;
+}
+
+.destination__card img {
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+
+}
+
+.destination__card h3{
+    position: relative;
+    bottom: 40px;
+    left: 10px;
+    color: white;
+    width: 270px;
+    
+
+}
+
+.destination__card {
+    gap: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.destination__card img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.rental__title {
+    text-align: start;
+    padding-left: 13%;
+    padding-top: 30px;
+    font-weight: 2px;
+
+}
+
+.rental__title h1 {
+    padding-bottom: 10px;
+}
+
+.rental__card {
+
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.rental__card img {
+    width: 270px;
+    height: 200px;
+    border-radius: 10px;
+
+
+
+}
+
+.rental__card img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.rental__card p {
+    width: 270px;
+    padding-top: 10px;
+
+}
+
+.bottom{
+    padding-left: 13%;
+    padding-right: 13%;
+    padding-top: 35px;
+    background-color:lightgoldenrodyellow;
+}
+.bottom__1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:12px;
+    
+}
+
+.bottom__1__s3 a{color:black;
+}
+
+.bottom__1 p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.bottom__2{
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    align-items: center;
+    
+}
+
+.bottom__2 img{
+    width: 35px;
+}
+
+.bottom__2 p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width:500px) {
+    body{
+        font-size: 13px;
+    }
+    
+.recommended__card{
+    flex-basis: 20%;
+}  
+
+.places__card,.adventure__card,.destination__card,.rental__card{
+    flex-basis: 20%;
+}
+
+.search__2{
+    display:none;
+}
+
+.navbar__s2,.navbar__s3__1{
+    display: none;
+}
+.search__3{
+    align-items: center;
+}
+
+.explore__card{
+    flex-basis:50%;
+}
+
+}
+
+
+
+    
